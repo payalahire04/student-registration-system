@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CampusConnect 2026 - Student Registration</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            width: 400px;
+            margin: 40px auto;
+            background: white;
+            padding: 25px;
+            border-radius: 10px;
+        }
+
+        h1 {
+            text-align: center;
+            color: #1a73e8;
+        }
+
+        h2 {
+            text-align: center;
+        }
+
+        label {
+            font-weight: bold;
+        }
+
+        input, select {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+
+        input[type="submit"] {
+            background-color: #1a73e8;
+            color: white;
+            border: none;
+            padding: 12px;
+            cursor: pointer;
+            font-size: 16px;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #1558b0;
+        }
+
+        .login {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>CampusConnect 2026</h1>
+
+    <h2>Student Registration</h2>
+
+    <form action="register.php" method="POST">
+
+        <!-- Full Name -->
+        <label>Full Name</label>
+        <input type="text" name="fullname" required>
+
+        <!-- Student ID -->
+        <label>Student ID</label>
+        <input type="text" name="studentid" required>
+
+        <!-- Email -->
+        <label>Email</label>
+        <input type="email" name="email" required>
+
+        <!-- College Name -->
+        <label>College Name</label>
+        <input type="text" name="college" required>
+
+        <!-- Location -->
+        <label>Location</label>
+        <input type="text" name="location" required>
+
+        <!-- Event -->
+        <label>Event</label>
+        <select name="event" required>
+            <option value="">-- Select Event --</option>
+            <option value="Hackathon">Hackathon</option>
+            <option value="Workshop">Workshop</option>
+            <option value="Seminar">Seminar</option>
+            <option value="Coding Contest">Coding Contest</option>
+        </select>
+
+        <!-- Password -->
+        <label>Password</label>
+        <input type="password" name="password" required>
+
+        <!-- Register -->
+        <input type="submit" value="REGISTER">
+
+    </form>
+
+    <div class="login">
+        <p>Already registered?</p>
+        <a href="login.html">Go to Student Login</a>
+    </div>
+
+</div>
+
+</body>
+</html>
